@@ -34,7 +34,7 @@
         "drupal/core-dev": "^9.2"
     },
     "conflict": {
-            "drupal/drupal": "*"
+        "drupal/drupal": "*"
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
@@ -43,20 +43,17 @@
             "locations": {
                 "web-root": "./web"
             },
-            "allowed-packages": [
-                "pantheon-systems/drupal-integrations"
-            ],
+            "allowed-packages": ["pantheon-systems/drupal-integrations"],
             "file-mapping": {
                 "[project-root]/.editorconfig": false,
                 "[project-root]/pantheon.upstream.yml": false,
                 "[project-root]/.gitattributes": false
             },
-            
-        "patches": {
-            "drupal/core": {
-      "Show site slogan Olivero theme": "https://www.drupal.org/files/issues/2020-12-13/3188136-3.patch"
-    }
-  }
+            "patches": {
+                "drupal/core": {
+                    "Show site slogan Olivero theme": "https://www.drupal.org/files/issues/2020-12-13/3188136-3.patch"
+                }
+            }
         },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
@@ -73,36 +70,29 @@
         "composer-exit-on-patch-failure": true,
         "patchLevel": {
             "drupal/core": "-p2"
-        }
+        },
+        "enable-patching": true
     },
     "autoload": {
-        "classmap": [
-            "upstream-configuration/scripts/ComposerScripts.php"
-        ]
+        "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
     },
     "scripts": {
-        "pre-update-cmd": [
-            "DrupalComposerManaged\\ComposerScripts::preUpdate"
-        ],
-        "upstream-require": [
-            "DrupalComposerManaged\\ComposerScripts::upstreamRequire"
-        ]
-    },
-    "scripts-descriptions": {
-        "upstream-require": "Add a dependency to an upstream. See https://pantheon.io/docs/create-custom-upstream for information on creating custom upstreams."
+        "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
+        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"]
     },
     "config": {
         "preferred-install": "dist",
         "sort-packages": false,
         "platform": {
-            "php": "7.4"
+            "php": "8.1.13"
         },
         "allow-plugins": {
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "phpstan/extension-installer": true
         }
     }
 }
