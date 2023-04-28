@@ -1,0 +1,6 @@
+name: sailing-duet
+recipe: pantheon
+config:
+  framework: drupal8
+  site: sailing-duet
+  id: 0ac35fe5-b2c9-4f1b-b844-414b59e78dbc
