@@ -7,3 +7,7 @@ p {padding-top:10px;}
 .main-content__container {
 padding-top: 3.625rem;
 }
+.views-slideshow-controls-bottom.clearfix, .views-slideshow-controls-top.clearfix
+{	
+text-align:center;
+}
