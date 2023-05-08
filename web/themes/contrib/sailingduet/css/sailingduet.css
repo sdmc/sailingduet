@@ -25,3 +25,10 @@ max-width: none;
 #block-sailingduet-views-block-slides-block-1 {
     padding-top: 2rem;
 }
+
+h2, h3 {
+    color:#666666;
+    font-size:1.5rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
