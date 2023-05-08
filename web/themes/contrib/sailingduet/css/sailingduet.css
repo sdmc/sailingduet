@@ -1,4 +1,4 @@
-.field__item img {margin:auto;}
+/*.field__item img {margin:auto;}*/
 
 p {padding-top:10px;}
 
@@ -7,11 +7,11 @@ p {padding-top:10px;}
 .main-content__container {
 padding-top: 3.625rem;
 }
-.views-slideshow-controls-bottom.clearfix, .views-slideshow-controls-top.clearfix
+/*.views-slideshow-controls-bottom.clearfix, .views-slideshow-controls-top.clearfix
 {	
 text-align:center;
 }
-
+*/
 #main-wrapper {
 Margin-bottom:20px;}
 
@@ -20,4 +20,8 @@ background-image: none;
 }
 .container {
 max-width: none;
+}
+
+#block-sailingduet-views-block-slides-block-1 {
+    padding-top: 2rem;
 }
