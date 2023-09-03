@@ -1,8 +1,10 @@
 /*.field__item img {margin:auto;}*/
 
+.page-wrapper {max-width:100%;}
+
 p {padding-top:10px;}
 
-.region > * {margin-bottom:0}
+.region > * {margin-bottom:0;}
 
 .main-content__container {
 padding-top: 3.625rem;
@@ -23,7 +25,12 @@ max-width: none;
 }
 
 #block-sailingduet-views-block-slides-block-1 {
-    padding-top: 2rem;
+  /*  padding-top: 2rem;*/
+    background-color:#eeeeee;
+}
+
+.field.field--name-field-media-image.field--type-image.field--label-visually_hidden  {
+    background-color:#eeeeee;
 }
 
 .field-content h2, h3 {
@@ -31,4 +38,18 @@ max-width: none;
     font-size:1.5rem;
     margin-top:1rem;
     margin-bottom:1rem;
+}
+img {
+    margin:auto;
+}
+
+.path-frontpage .block__content {
+    padding-top:1em;
+}
+.page-node-type-article .node__meta {
+    margin-top:2.25rem;
+    margin-bottom:0;
+}
+.page-node-type-article .block__content {
+    margin:2rem;
 }
