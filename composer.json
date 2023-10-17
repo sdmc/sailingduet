@@ -11,6 +11,9 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        { "type": "composer",
+  "url": "https://asset-packagist.org"
         }
     ],
     "require": {
